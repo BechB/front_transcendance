@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Transcendance</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+  </head>
+
+<style>
+  .neon-glitch {
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
+    color: #00ffff;
+  }
+
+  .neon-glitch {
+    text-shadow:
+      0 0 10px #a006ff,
+      0 0 20px #a200ff,
+      0 0 40px #590f8d,
+      0 0 80px #a200ff;
+    filter: blur(0.5px);
+  }
+
+  .neon-glitch::before,
+  .neon-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: screen;
+    animation: glitch 1.5s infinite;
+    pointer-events: none;
+  }
+
+  .neon-glitch::before::before {
+    color: #ff0066;
+    animation-duration: 1.2s;
+  }
+
+  .neon-glitch::after::after {
+    color: #00aaff;
+    animation-duration: 1.7s;
+  }
+
+  @keyframes glitch {
+    0% { transform: translate(0); opacity: 1; }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); opacity: 0.7; }
+    60% { transform: translate(-3px, 1px); }
+    80% { transform: translate(3px, -1px); opacity: 0.8; }
+    100% { transform: translate(0); opacity: 1; }
+  }
+</style>
+
+
+<body class="m-0 relative h-screen w-screen overflow-hidden">
+
+      <img src="images/sun.jpeg"
+          class="absolute bg-cover w-screen h-screen -z-10">
+
+
+
+      <!-- <img src="images/triple.png"
+          class="absolute top-0/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] object-fill z-0"> -->
+
+      <h1 class="neon-glitch absolute top-[10%] left-1/2 -translate-x-1/2 text-7xl z-20"
+          data-text="TRANSCENDANCE">TRANSCENDANCE
+      </h1>
+
+
+      <h1 class="neon-glitch absolute top-[50%] left-1/2 -translate-x-1/2 text-4xl z-20"
+          data-text="👾PLAY👾">
+        👾PLAY👾
+      </h1>
+
+      <main class="absolute z-10 text-white text-center top-1/4">
+          <a href="#" class="text-blue-400 underline text-lg md:text-xl">Redirection</a>
+      </main>
+</body>
+</html>
