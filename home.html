@@ -79,7 +79,7 @@
 
 <body>
 	<!-- BACKGROUND PAGE D'ACCUEIL -->
-	<img src="images/galaxy.gif"
+	<img src="images/enter.jpg"
 			class="absolute bg-cover w-screen h-screen -z-10">
 
 	<!-- <img src="images/triple.png"
@@ -92,14 +92,14 @@
 
 	<!-- GESTION DU BOUTON DE CONNEXION, CHANGEMENT DU CURSEUR, ETC...-->
 	<h1 id="open-login"
-				class="neon-glitch absolute top-[50%] left-1/2 -translate-x-1/2 text-4xl z-20 cursor-pointer"
+				class="neon-glitch absolute top-[30%] left-1/2 -translate-x-1/2 text-4xl z-20 cursor-pointer"
 				data-text="ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩">
 			ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩
 	</h1>
 
 
 	<div id="login-form"
-			class="hidden absolute top-[63%] left-1/2 -translate-x-1/2 bg-black/60 p-6 rounded-xl backdrop-blur-xl shadow-2xl z-30 w-[300px] neon-border">
+			class="hidden absolute top-[40%] left-1/2 -translate-x-1/2 bg-black/60 p-6 rounded-xl backdrop-blur-xl shadow-2xl z-30 w-[300px] neon-border">
 		<!-- EMPILE LES ELEMENTS VERTICAUX + ESPACE DE 4 ENTRE LES CHAMPS -->
 		<form class="flex flex-col gap-4 text-white">
 			<!-- "placeholder" = TEXTE D'EXEMPLE -->
@@ -112,8 +112,8 @@
 						class="px-3 py-2 rounded bg-gray-900/80 neon-border">
 			<!-- TYPE "submit" ENVOIE LE FORMULAIRE -->
 			<button type="submit"
-							class="px-4 py-2 bg-gray-900/80 text-cyan-300 rounded font-semibold neon-border">
-				Se connecter
+							class="neon-glitch px-4 py-2 bg-gray-900/80 text-cyan-300 rounded font-semibold neon-border">
+				👾​ GO 👾​
 			</button>
 		</form>
 	</div>
@@ -126,11 +126,25 @@
 		form.classList.toggle("hidden");
 		};
 	</script>
+
+	<script>
+		// Gestion du bouton GO (soumission du formulaire)
+		document.querySelector("#login-form form").onsubmit = (e) => {
+			e.preventDefault(); // Empêche le rechargement par défaut
+			// Redirection vers la page suivante
+			window.location.href = "page2.html"; // Remplace par ta page
+		};
+	</script>
+
+
+
+
 </body>
 </html>
 
 
 <!-- script pour comparer des donnees rentres avec ceux attendus
+
 <script>
 document.querySelector("form").onsubmit = (e) => {
     e.preventDefault(); // empêche le rechargement de la page
