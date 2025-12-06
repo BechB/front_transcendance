@@ -78,66 +78,138 @@
 
 
 <body>
-	<!-- BACKGROUND PAGE D'ACCUEIL -->
-	<img src="images/enter.jpg"
-			class="absolute bg-cover w-screen h-screen -z-10">
+	<!-- CONTAINER SPA -->
+	<div id="app">
 
-	<!-- <img src="images/triple.png"
-			class="absolute top-0/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] object-fill z-0"> -->
+		<div id="page-home" class="spa-page">
+			<!-- BACKGROUND PAGE D'ACCUEIL -->
+			<img src="images/enter.jpg"
+					class="absolute bg-cover w-screen h-screen -z-10">
 
-	<!-- AFFICHAGE DU TITRE PRINCIPAL DU SITE -->
-	<h1 class="neon-glitch absolute top-[5%] left-1/2 -translate-x-1/2 text-7xl z-20"
-			data-text="𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼">𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼
-	</h1>
+			<!-- AFFICHAGE DU TITRE PRINCIPAL DU SITE -->
+			<h1 class="neon-glitch absolute top-[5%] left-1/2 -translate-x-1/2 text-7xl z-20"
+					data-text="𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼">𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼
+			</h1>
 
-	<!-- GESTION DU BOUTON DE CONNEXION, CHANGEMENT DU CURSEUR, ETC...-->
-	<h1 id="open-login"
-				class="neon-glitch absolute top-[30%] left-1/2 -translate-x-1/2 text-4xl z-20 cursor-pointer"
-				data-text="ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩">
-			ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩
-	</h1>
+			<!-- GESTION DU BOUTON DE CONNEXION, CHANGEMENT DU CURSEUR, ETC...-->
+			<h1 id="open-login"
+						class="neon-glitch absolute top-[30%] left-1/2 -translate-x-1/2 text-4xl z-20 cursor-pointer"
+						data-text="ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩">
+					ℂ𝕆ℕℕ𝔼ℂ𝕋𝕀𝕆ℕ⮩
+			</h1>
 
+			<div id="login-form"
+					class="hidden absolute top-[40%] left-1/2 -translate-x-1/2 bg-black/60 p-6 rounded-xl backdrop-blur-xl shadow-2xl z-30 w-[300px] neon-border">
+				<!-- EMPILE LES ELEMENTS VERTICAUX + ESPACE DE 4 ENTRE LES CHAMPS -->
+				<form id="login-form-form" class="flex flex-col gap-4 text-white">
+					<!-- "placeholder" = TEXTE D'EXEMPLE -->
+					<input type="text"
+								placeholder="LOGIN"
+								class="px-3 py-2 rounded bg-gray-900/80 neon-border">
+					<!-- TYPE PASSWORD DONC MASQUE LE CONTENU -->
+					<input type="password"
+								placeholder="PASSWORD"
+								class="px-3 py-2 rounded bg-gray-900/80 neon-border">
+					<!-- TYPE "submit" ENVOIE LE FORMULAIRE -->
+					<button type="submit"
+									class="neon-glitch px-4 py-2 bg-gray-900/80 text-cyan-300 rounded font-semibold neon-border">
+						👾​ GO 👾​
+					</button>
+				</form>
+			</div>
+		</div>
 
-	<div id="login-form"
-			class="hidden absolute top-[40%] left-1/2 -translate-x-1/2 bg-black/60 p-6 rounded-xl backdrop-blur-xl shadow-2xl z-30 w-[300px] neon-border">
-		<!-- EMPILE LES ELEMENTS VERTICAUX + ESPACE DE 4 ENTRE LES CHAMPS -->
-		<form class="flex flex-col gap-4 text-white">
-			<!-- "placeholder" = TEXTE D'EXEMPLE -->
-			<input type="text"
-						placeholder="LOGIN"
-						class="px-3 py-2 rounded bg-gray-900/80 neon-border">
-			<!-- TYPE PASSWORD DONC MASQUE LE CONTENU -->
-			<input type="password"
-						placeholder="PASSWORD"
-						class="px-3 py-2 rounded bg-gray-900/80 neon-border">
-			<!-- TYPE "submit" ENVOIE LE FORMULAIRE -->
-			<button type="submit"
-							class="neon-glitch px-4 py-2 bg-gray-900/80 text-cyan-300 rounded font-semibold neon-border">
-				👾​ GO 👾​
-			</button>
-		</form>
+		<!-- PAGE APRES CONNEXION -->
+		<div id="page-dashboard" class="spa-page hidden">
+			<!-- BACKGROUND PAGE D'ACCUEIL -->
+			<img src="images/enter.jpg"
+					class="absolute bg-cover w-screen h-screen -z-10">
+
+			<!-- AFFICHAGE DU TITRE PRINCIPAL DU SITE -->
+			<h1 class="neon-glitch absolute top-[5%] left-1/2 -translate-x-1/2 text-7xl z-20"
+					data-text="𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼">𝕋ℝ𝔸ℕ𝕊ℂ𝔼ℕ𝔻𝔸ℕℂ𝔼
+			</h1>
+			<h1 class="neon-glitch absolute top-[30%] left-1/2 -translate-x-1/2 text-5xl z-20"
+					data-text="​ℙ𝕃𝔸𝕐​">​ℙ𝕃𝔸𝕐
+			</h1>
+			<h1 class="neon-glitch absolute top-[40%] left-1/2 -translate-x-1/2 text-5xl z-20"
+					data-text="​ℙℝ𝕆𝔽𝕀𝕃𝔼​">​ℙℝ𝕆𝔽𝕀𝕃𝔼
+			</h1>
+			<h1 class="neon-glitch absolute top-[50%] left-1/2 -translate-x-1/2 text-5xl z-20"
+					data-text="​𝕆ℙ𝕋𝕀𝕆ℕ𝕊​">​𝕆ℙ𝕋𝕀𝕆ℕ𝕊​
+			</h1>
+
+			<h1 id="open-chat"
+						class="neon-glitch absolute top-[1%] left-[98%] -translate-x-[98%] text-4xl z-20 cursor-pointer"
+						data-text="|||">
+					|||
+			</h1>
+
+			<div id="chat-form"
+					class="hidden absolute top-[0.5%] left-[99%] -translate-x-[99%] bg-black/60 p-6 rounded-xl backdrop-blur-xl shadow-2xl z-30 w-[100px] neon-border">
+				<!-- EMPILE LES ELEMENTS VERTICAUX + ESPACE DE 4 ENTRE LES CHAMPS -->
+				<form id="chat-form-form" class="flex flex-col gap-4 text-white">
+					<!-- "placeholder" = TEXTE D'EXEMPLE -->
+					<input type="text"
+								placeholder="LON"
+								class="px-3 py-2 rounded bg-gray-900/80 neon-border">
+					<!-- TYPE PASSWORD DONC MASQUE LE CONTENU -->
+					<input type="password"
+								placeholder="PASRD"
+								class="px-3 py-2 rounded bg-gray-900/80 neon-border">
+					<!-- TYPE "submit" ENVOIE LE FORMULAIRE -->
+					<button type="submit"
+									class="neon-glitch px-4 py-2 bg-gray-900/80 text-cyan-300 rounded font-semibold neon-border">
+						👾​ GO 👾​
+					</button>
+				</form>
+			</div>
+
+		</div>
+
 	</div>
 
-	<!-- SCRIPT POUR AFFICHER / CACHER LE FORMULAIRE -->
 	<script>
-		document.getElementById("open-login").onclick = () =>
-		{
-		const form = document.getElementById("login-form");
-		form.classList.toggle("hidden");
+		/* OUVERTURE FORMULAIRE */
+		document.getElementById("open-login").onclick = () => {
+			document.getElementById("login-form").classList.toggle("hidden");
 		};
-	</script>
 
-	<script>
-		// Gestion du bouton GO (soumission du formulaire)
-		document.querySelector("#login-form form").onsubmit = (e) => {
-			e.preventDefault(); // Empêche le rechargement par défaut
-			// Redirection vers la page suivante
-			window.location.href = "page2.html"; // Remplace par ta page
+		document.getElementById("open-chat").onclick = () => {
+			document.getElementById("chat-form").classList.toggle("hidden")
+		}
+
+		/* NAVIGATION SPA */
+		function navigate(path) {
+			history.pushState({ page: path }, "", path);
+			render(path);
+		}
+
+		function render(path) {
+			document.querySelectorAll(".spa-page").forEach(p => p.classList.add("hidden"));
+
+			if (path === "#/dashboard") {
+				document.getElementById("page-dashboard").classList.remove("hidden");
+			} else {
+				document.getElementById("page-home").classList.remove("hidden");
+			}
+		}
+
+		/* BOUTON GO */
+		document.getElementById("login-form-form").addEventListener("submit", e => {
+			e.preventDefault();
+			navigate("#/dashboard");
+		});
+
+		/* BOUTONS RETOUR / AVANT */
+		window.onpopstate = event => {
+			if (event.state) render(event.state.page);
+			else render("/");
 		};
+
+		/* ÉTAT INITIAL */
+		render("/");
 	</script>
-
-
-
 
 </body>
 </html>

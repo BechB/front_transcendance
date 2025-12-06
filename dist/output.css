@@ -558,8 +558,20 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-1\/2 {
   left: 50%;
+}
+
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .top-\[5\%\] {
@@ -570,32 +582,60 @@ video {
   top: 50%;
 }
 
-.top-\[63\%\] {
-  top: 63%;
+.left-\[1\/2\] {
+  left: 1/2;
 }
 
-.top-\[30\%\] {
-  top: 30%;
+.left-\[90\] {
+  left: 90;
 }
 
-.top-\[20\%\] {
-  top: 20%;
+.left-\[90\%\] {
+  left: 90%;
 }
 
-.top-\[35\%\] {
-  top: 35%;
+.left-\[\%\] {
+  left: %;
 }
 
-.top-\[40\%\] {
-  top: 40%;
+.left-\[95\%\] {
+  left: 95%;
+}
+
+.left-\[92\%\] {
+  left: 92%;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.top-\[1\%\] {
+  top: 1%;
+}
+
+.left-\[94\%\] {
+  left: 94%;
+}
+
+.left-\[98\%\] {
+  left: 98%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
+}
+
+.top-\[0\.5\%\] {
+  top: 0.5%;
+}
+
+.left-\[99\%\] {
+  left: 99%;
 }
 
 .-z-10 {
   z-index: -10;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .z-20 {
@@ -606,16 +646,16 @@ video {
   z-index: 30;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
-}
-
-.h-\[400px\] {
-  height: 400px;
 }
 
 .h-screen {
@@ -626,16 +666,61 @@ video {
   width: 300px;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
 .w-screen {
   width: 100vw;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[80\%\] {
+  --tw-translate-x: -80%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[8\] {
+  --tw-translate-x: -8;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[90\] {
+  --tw-translate-x: -90;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[90\%\] {
+  --tw-translate-x: -90%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[95\%\] {
+  --tw-translate-x: -95%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[94\%\] {
+  --tw-translate-x: -94%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[98\%\] {
+  --tw-translate-x: -98%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[99\] {
+  --tw-translate-x: -99;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[99\%\] {
+  --tw-translate-x: -99%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -679,11 +764,6 @@ video {
   background-size: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -703,9 +783,18 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-7xl {
